@@ -10,35 +10,30 @@
 #include <fstream>
 #include <iomanip>
 
-//#include "slist.h"
-//#include "stack.h"
-//#include "queue.h"
+#include "slist.h"
+#include "stack.h"
+#include "queue.h"
 //#include "bag.h"
 //#include "linked_stackofstuff.h"
 //#include "array_stackofstuff.h"
-//#include "stack_arrayexpand.h"
-
 #include "utils.h"
 
-//#include "selection_sort.h"
+#include "selection_sort.h"
 //#include "insertion_sort.h"
 //#include "shell_sort.h"
 
 //#include "merge_sort.h"
 
-//#include "random.h"
+#include "random.h"
 //#include "students.h"
 
 #include "array.h"
 
 //#include "st.h"
 #include "bst.h"
-#include "bst_redblack.h"
 
-//#include "graph.h"
-//#include "digraph.h"
-
-//#include "btree.h"
+#include "graph.h"
+#include "digraph.h"
 
 
 template <typename T>
@@ -299,7 +294,7 @@ void test_shuffle() {
 
 //------------------------------------------------------------------------------
 int main(int argc, const char * argv[]) {
-//run_node_list_stack_queue_tests<std::string>();
+//  run_node_list_stack_queue_tests<std::string>();
 //  kth_from_last(argc, argv);
 //  missing_parenthesis_test();
 //  dijkstra_algorithm();
@@ -347,30 +342,10 @@ int main(int argc, const char * argv[]) {
   
 //  directed_cycle::run_tests(argc, argv);
   
-//  array_<std::string>::run_tests();
+  symbol_digraph::run_tests(argc, argv);
   
-//  symbol_digraph::run_tests(argc, argv);
-//
-  
-//  array_expand<int>::run_tests();
-  
-//  stack_arrayexpand<int>::run_tests();
-  
-  
-//  char buf[BUFSIZ];
-//  if (argc != 2) { std::cerr << "Usage ./sqb filename\n";  exit(1); }
-  
-  bst<std::string, int>::test_bst("tinyST.txt");
-//  bst<std::string, int>::test_bst("gettysburgST.txt");
-//  bst<std::string, int>::test_bst(argv[1]);
-  
-//  bst_red_black<std::string, std::string>::run_tests();
-  
-  
-//  btree<std::string, std::string>::run_tests();
-  
+  std::cout << "\n";
   std::cout << "\t\t...done.\n";
   
   return 0;
 }
-
